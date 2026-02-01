@@ -34,3 +34,25 @@ chat_with_mysql/
 1. Clone the Repo
 git clone [https://github.com/pranjal9091/AI-SQL-Assistant.git](https://github.com/pranjal9091/AI-SQL-Assistant.git)
 cd chat_with_mysql
+
+2. Activate Environment
+source chat_with_mysql/bin/activate
+
+3. Install Requirements
+pip install -r requirements.txt
+
+4. Configure Environment Variables
+Create a .env file in the root directory:
+HUGGINGFACEHUB_API_TOKEN=your_token_here
+
+🏃 Running the Project
+Web Dashboard (Streamlit)
+streamlit run app.py
+
+REST API (FastAPI)
+uvicorn main:app --reload
+
+Note: Check the interactive API docs at http://127.0.0.1:8000/docs.
+
+👨‍💻 About Me
+I am Pranjal Singh, a student at IIIT Ranchi with a strong interest in AI/ML research, competitive programming, and open-source software. I enjoy building tools that solve real-world data accessibility problems.
